@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 70px;
+  background-color: #042039;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .logo img {
+  height: 80%;
+}
+nav .links {
+  margin-right: 20px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  height: 50px;
+  background-color: #042039;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.middle {
+  min-height: 100%;
+  background-color: #e9f3fc;
+}
+
+.about-middle {
+  margin: 0 auto;
+  min-height: 87%;
+  background-color: #e9f3fc;
+}
+.about-middle #app .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.about-middle #app .about img {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-middle #app .about .about-us {
+  margin-top: 2%;
+}
+.about-middle #app .privacy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.login-middle {
+  min-height: 100%;
+  background-color: #e9f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.signup-middle {
+  min-height: 100%;
+  background-color: #e9f3fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.signup-middle #app .placeholder .inputs {
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=styles.css.map */

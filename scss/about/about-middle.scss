@@ -1,0 +1,31 @@
+.about-middle {
+  margin: 0 auto;
+  min-height: 87%;
+  background-color: #e9f3fc;
+
+  #app {
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .about-us {
+        margin-top: 2%;
+      }
+    }
+
+    .privacy {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+  }
+}
