@@ -1,4 +1,4 @@
-var key = "dfa5b9eded8a46e4b86202256222908";
+var key = "53599ec288054906a0a203018222908";
 var baseURL = "http://api.weatherapi.com/v1/";
 
 function getCurrentDate() {
@@ -33,8 +33,26 @@ function getCurrentWeather(location) {
   $.get(
     `${baseURL}forecast.json?key=${key}&q=${location}&dt=${currentDate}&aqi=no&alerts=no`,
     (data) => {
-      //document.write()
       console.log(data);
+      $("#app-results").html(
+        "Location: " +
+          data.location.name +
+          "<br>" +
+          "Current Local Date: " +
+          data.location.localtime +
+          "<br>" +
+          "Weather Condition: " +
+          data.current.condition.text +
+          "<br>" +
+          "Current Temperature: " +
+          data.current.temp_f +
+          "°F" +
+          "<br>"
+      );
+      $("#app-results").append(
+        "Forecast: " + JSON.stringify(data.forecast.forecastday)
+      );
+      //$("#app").show();
     }
   ).fail(function (e) {
     alert("Sorry, your data cannot be loaded at this time.");
