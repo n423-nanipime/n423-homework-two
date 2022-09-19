@@ -1,4 +1,14 @@
 .middle {
+  margin-top: 10px;
   min-height: 100%;
   background-color: #e9f3fc;
+  text-align: center;
+
+  #app {
+    #app-results {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
 }
