@@ -1,4 +1,4 @@
-# n423-homework-two
+# Homework 2
 
 ## Homework instructions and web4 link
 
