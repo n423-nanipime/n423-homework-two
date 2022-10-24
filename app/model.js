@@ -1,5 +1,5 @@
 var key = "53599ec288054906a0a203018222908";
-var baseURL = "http://api.weatherapi.com/v1/";
+var baseURL = "https://api.weatherapi.com/v1/";
 
 function getCurrentDate() {
   const date = new Date();
@@ -35,23 +35,36 @@ function getCurrentWeather(location) {
     (data) => {
       console.log(data);
       $("#app-results").html(
-        "Location: " +
+        `<h2>Current Weather</h2>` +
+          `<p>Location: </p>` +
           data.location.name +
+          `<p>Region: </p>` +
+          data.location.region +
           "<br>" +
-          "Current Local Date: " +
+          `<p>Current Local Date: </p>` +
           data.location.localtime +
           "<br>" +
-          "Weather Condition: " +
+          `<p>Weather Condition: </p>` +
           data.current.condition.text +
           "<br>" +
-          "Current Temperature: " +
+          `<p>Current Temperature: </p>` +
           data.current.temp_f +
+          `<p>Max. Temperature: </p>` +
+          data.forecast.forecastday[0].day.maxtemp_f +
+          `<p>Min. Temperature: </p>` +
+          data.forecast.forecastday[0].day.mintemp_f +
           "°F" +
-          "<br>"
+          "<br>" +
+          `<p>Sunrise: </p>` +
+          data.forecast.forecastday[0].astro.sunrise +
+          `<p>Sunset: </p>` +
+          data.forecast.forecastday[0].astro.sunset
       );
-      $("#app-results").append(
-        "Forecast: " + JSON.stringify(data.forecast.forecastday)
-      );
+      // $("#app-results").html(
+      //   "Forecast: " +
+      //     JSON.stringify(data.forecast.forecastday(0).astro.sunrise)
+      // );
+
       //$("#app").show();
     }
   ).fail(function (e) {
