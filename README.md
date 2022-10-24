@@ -12,4 +12,4 @@ You must incorporate over 80% of the information in the API JSON object.
 Upload this to the web 4 server and to Github as well. Remember to add to. your Readme file and put the link to Web 4 inside the Readme file. 
 Submit the Github link to this assignment. 
 
-https://in-info-web4.informatics.iupui.edu/~nanipime/n423-homework-two/
+https://in-info-web4.informatics.iupui.edu/~nanipime/n423-hw2-fix/
